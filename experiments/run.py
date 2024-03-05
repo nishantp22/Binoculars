@@ -33,7 +33,7 @@ def main(args):
             or f"{args.dataset_name}-{args.machine_text_source}-{args.tokens_seen}-tokens"
             .strip().replace(' ', '-')
     )
-    breakpoint()
+    # breakpoint()
     args.experiment_path = f"results/{args.job_name}"
     os.makedirs(f"{args.experiment_path}", exist_ok=True)
 
