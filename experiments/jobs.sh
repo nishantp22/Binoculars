@@ -5,18 +5,21 @@ python run.py \
   --dataset_name CC-News \
   --human_sample_key text \
   --machine_sample_key meta-llama-Llama-2-13b-hf_generated_text_wo_prompt \
-  --machine_text_source LLaMA-2-13B
+  --machine_text_source LLaMA-2-13B \
+  --job_name Output
 
 python run.py \
   --dataset_path ../datasets/core/cnn/cnn-llama2_13.jsonl \
   --dataset_name CNN \
   --human_sample_key article \
   --machine_sample_key meta-llama-Llama-2-13b-hf_generated_text_wo_prompt \
-  --machine_text_source LLaMA-2-13B
+  --machine_text_source LLaMA-2-13B \
+  --job_name Output
 
 python run.py \
   --dataset_path ../datasets/core/pubmed/pubmed-llama2_13.jsonl \
   --dataset_name PubMed \
   --human_sample_key article \
   --machine_sample_key meta-llama-Llama-2-13b-hf_generated_text_wo_prompt \
-  --machine_text_source LLaMA-2-13B
+  --machine_text_source LLaMA-2-13B \
+  --job_name Output
